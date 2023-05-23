@@ -117,4 +117,13 @@ class ConvertirTest {
         Assertions.assertEquals("DCCCXCV",chiffreRomain);
     }
 
+    @Test
+    void convertirLeChiffreEntre900et999() {
+        //given
+        int valeur = 957;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("CMLVII",chiffreRomain);
+    }
 }
