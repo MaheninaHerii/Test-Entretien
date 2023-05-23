@@ -46,4 +46,14 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("IX",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffreEntre10et39() {
+        //given
+        int valeur = 27;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("XXVII",chiffreRomain);
+    }
 }

@@ -11,7 +11,10 @@ public class Convertir {
         if (nombreArabe <= 0) {
             return "";
         }
-        if (nombreArabe >= 9) {
+
+        if (nombreArabe >= 10) {
+            return "X" + enChiffreRomain(nombreArabe - 10);
+        } else if (nombreArabe >= 9) {
             return "IX" + enChiffreRomain(nombreArabe - 9);
         } else if (nombreArabe >= 5) {
             return "V" + enChiffreRomain(nombreArabe - 5);
