@@ -106,4 +106,15 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("CDXCIX",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffreEntre500et899() {
+        //given
+        int valeur = 895;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("DCCCXCV",chiffreRomain);
+    }
+
 }
