@@ -118,12 +118,12 @@ class ConvertirTest {
     }
 
     @Test
-    void convertirLeChiffreEntre900et999() {
+    void convertirLeChiffreSupérieurouEgale1000() {
         //given
-        int valeur = 957;
+        int valeur = 3999;
         //when
         String chiffreRomain = Convertir.enChiffreRomain(valeur);
         //then
-        Assertions.assertEquals("CMLVII",chiffreRomain);
+        Assertions.assertEquals("MMMCMXCIX",chiffreRomain);
     }
 }

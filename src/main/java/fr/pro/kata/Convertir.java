@@ -2,7 +2,7 @@ package fr.pro.kata;
 
 public class Convertir {
 
-    /**
+    /** Approche par Récursivité
      * Méthode permet de convertir chiffre arabe en chiffre romain.
      * @param nombreArabe
      * @return
@@ -12,7 +12,9 @@ public class Convertir {
             return "";
         }
 
-        if (nombreArabe >= 900) {
+        if (nombreArabe >= 1000) {
+            return "M" + enChiffreRomain(nombreArabe - 1000);
+        } else if (nombreArabe >= 900) {
             return "CM" + enChiffreRomain(nombreArabe - 900);
         } else if (nombreArabe >= 500) {
             return "D" + enChiffreRomain(nombreArabe - 500);
