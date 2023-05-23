@@ -36,4 +36,14 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("V",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffre9() {
+        //given
+        int valeur = 9;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("IX",chiffreRomain);
+    }
 }
