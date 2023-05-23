@@ -86,4 +86,14 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("XCV",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffreEntre100et399() {
+        //given
+        int valeur = 297;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("CCXCVII",chiffreRomain);
+    }
 }
