@@ -11,6 +11,10 @@ public class Convertir {
         if (nombreArabe <= 0) {
             return "";
         }
-        return "I" + enChiffreRomain(nombreArabe - 1);
+        if (nombreArabe >= 4) {
+            return "IV" + enChiffreRomain(nombreArabe - 4);
+        } else {
+            return "I" + enChiffreRomain(nombreArabe - 1);
+        }
     }
 }

@@ -16,4 +16,14 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("I",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffre4() {
+        //given
+        int valeur = 4;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("IV",chiffreRomain);
+    }
 }
