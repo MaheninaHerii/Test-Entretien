@@ -8,6 +8,9 @@ public class Convertir {
      * @return
      */
     public static String enChiffreRomain(int nombreArabe) {
-        return null;
+        if (nombreArabe <= 0) {
+            return "";
+        }
+        return "I" + enChiffreRomain(nombreArabe - 1);
     }
 }
