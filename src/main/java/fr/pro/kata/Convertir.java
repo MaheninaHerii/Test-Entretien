@@ -12,7 +12,9 @@ public class Convertir {
             return "";
         }
 
-        if (nombreArabe >= 40) {
+        if (nombreArabe >= 50) {
+            return "L" + enChiffreRomain(nombreArabe - 50);
+        } else if (nombreArabe >= 40) {
             return "XL" + enChiffreRomain(nombreArabe - 40);
         } else if (nombreArabe >= 10) {
             return "X" + enChiffreRomain(nombreArabe - 10);

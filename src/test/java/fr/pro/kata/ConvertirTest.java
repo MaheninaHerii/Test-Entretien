@@ -66,4 +66,14 @@ class ConvertirTest {
         //then
         Assertions.assertEquals("XLIX",chiffreRomain);
     }
+
+    @Test
+    void convertirLeChiffreEntre50et89() {
+        //given
+        int valeur = 84;
+        //when
+        String chiffreRomain = Convertir.enChiffreRomain(valeur);
+        //then
+        Assertions.assertEquals("LXXXIV",chiffreRomain);
+    }
 }
